@@ -29,5 +29,5 @@ Daarnaast bevat de App de volgende functies:
 * Menu --> **Write Keys**: De juiste A en B sleutels kunnen in alle sectoren van een tag met fabriekssleutels (`0xFFFFFFFFFFFF`) worden geschreven. Daarnaast worden de toegangsbits zo gezet dat de data in elke sector kan worden gelezen met de bovengenoemde A sleutel, en kan worden beschreven met de geheime B sleutel. Deze optie kan enige seconden in beslag nemen.
 * Menu --> **Set to factory default**: Een tag die is voorzien van (een combinatie van) bekende A en B sleutels kan worden teruggezet naar fabrieksinstellingen. Deze optie kan enige seconden in beslag nemen.
 
-
+Deze App is ontwikkeld en getest met een Moto G5S met 5.2 inch 1920x1080 display. De App is ook getest met een Sony Xperia Z5 compact met 4.6 inch 1280x720 display.
 
