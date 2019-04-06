@@ -1,6 +1,6 @@
 # PEE20_NFC_Example
 
-Deze repository bevat een library en voorbeeldprogramma om NFC tags uit te lezen middels een `MFRC522` NFC lezer en de `MPS430G2553`, bedoeld voor studenten die het project PEE20 volgen.
+Deze repository bevat een library en voorbeeldprogramma om NFC tags uit te lezen middels een `MFRC522` NFC lezer en de `MSP430G2553`, bedoeld voor studenten die het project PEE20 volgen.
 
 ## Tag informatie
 
