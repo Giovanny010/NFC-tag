@@ -63,6 +63,12 @@ int main(void)
     /* Init UART */
     UART_init();
 
+    /*
+     * Setting antenna gain to maximum (7) can read cards up to approximately 5cm.
+     * Default can read cards up to approximately 1cm.
+     * */
+    RC522_setAntennaGain(7);
+
     uint16_t i = 0;
 
     while(1){

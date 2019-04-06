@@ -136,7 +136,7 @@ void RC522_antennaOff(void)
  */
 void RC522_setAntennaGain(unsigned char mask) {
     RC522_clearBitMask(RFCfgReg, (0x07<<4));      // clear needed to allow 000 pattern
-    RC522_setBitMask(RFCfgReg, mask & (0x07<<4)); // only set RxGain[2:0] bits
+    RC522_setBitMask(RFCfgReg, (mask & 0x07)<<4); // only set RxGain[2:0] bits
 }
 
 /*
