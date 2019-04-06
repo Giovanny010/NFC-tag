@@ -16,10 +16,10 @@ Het voorbeeldprogramma kijkt elke seconde of er een tag aanwezig is binnen het b
 
 Er is een Android App ([apk](https://bitbucket.org/HR_ELEKTRO/pee20_nfc_example/downloads/HR_PEE20_NFC.apk)) beschikbaar welke dezelfde functionaliteit bevat als de robot moet krijgen:
 
-* Tags kunnen worden uitgelezen
-* De kleurwaarde (`R`, `G` of `B`) wordt weergegeven
-* Het getal kan worden uitgelezen en wordt weergegeven
-* Het getal wordt opgeteld bij het totaal
+* Tags kunnen worden uitgelezen.
+* De kleurwaarde (`R`, `G` of `B`) wordt weergegeven.
+* Het getal kan worden uitgelezen en wordt weergegeven.
+* Het getal wordt opgeteld bij het totaal.
 * Bij een reset signaal (**CLEAR** knop) wordt het totaal op nul gezet.
 
 Daarnaast bevat de App de volgende functies:
