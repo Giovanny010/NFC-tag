@@ -10,6 +10,23 @@ De data op de tags wordt uitgelezen middels de A sleutel `0xBABEBABEBABE`. De ta
 
 Het voorbeeldprogramma kijkt elke seconde of er een tag aanwezig is binnen het bereik van de lezer en leest de kleurwaarde uit. De kleurwaarde en extra informatie wordt via de UART gestuurd zodat deze zichtbaar wordt op een seriele monitor.
 
+Pin connections:
+ 
+* P1.1 UART RX (UART Jumper on MSPEXPG2 should be oriented horizontally)
+* P1.2 UART TX (UART Jumper on MSPEXPG2 should be oriented horizontally)
+
+* MSP        RC522
+* P1.3  <-->  RST
+* P1.4  <-->  SDA    (SPI CS)
+* P1.5  <-->  SCK    (SPI CLK)
+* P1.6  <-->  MISO   (SPI MISO)
+* P1.7  <-->  MOSI   (SPI MOSI)
+* VCC   <-->  VCC
+* GND   <-->  GND
+
+* P2.0  <-->  LED1 (no card present)
+* P2.1  <-->  LED2 (card present)
+
 ---
 
 # Android App
