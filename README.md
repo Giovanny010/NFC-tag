@@ -17,7 +17,7 @@ Het voorbeeldprogramma kijkt elke seconde of er een tag aanwezig is binnen het b
 Er is een Android App (apk) beschikbaar welke dezelfde functionaliteit bevat als de robot moet krijgen:
 
 * Tags kunnen worden uitgelezen
-* De kleurwaarde (R, G of B) wordt weergegeven
+* De kleurwaarde (`R`, `G` of `B`) wordt weergegeven
 * Het getal kan worden uitgelezen en wordt weergegeven
 * Het getal wordt opgeteld bij het totaal
 * Bij een reset signaal (**CLEAR** knop) wordt het totaal op nul gezet.
