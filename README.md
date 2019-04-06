@@ -15,7 +15,6 @@ Pin connections:
 * P1.1 UART RX (UART Jumper on MSPEXPG2 should be oriented horizontally)
 * P1.2 UART TX (UART Jumper on MSPEXPG2 should be oriented horizontally)
 
-* MSP        RC522
 * P1.3  <-->  RST
 * P1.4  <-->  SDA    (SPI CS)
 * P1.5  <-->  SCK    (SPI CLK)
