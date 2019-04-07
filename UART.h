@@ -8,24 +8,21 @@
 
 void UART_init(void)
 {
-    P1SEL  |= (RXD | TXD);     // Configure RXD and TXD pins
-    P1SEL2 |= (RXD | TXD);     // Configure RXD and TXD pins
-    UCA0CTL1 |= UCSWRST;       // Reset
-    UCA0CTL0 = 0;
-    UCA0CTL1 |= UCSSEL_2;      // SMCLK
-    //UCA0BR0 = 104;             // Assume DCO 1MHz --> 9600
-    //UCA0BR1 = 0;               // Assume DCO 1MHz --> 9600
-    //UCA0MCTL = UCBRS_1;         // Modulation UCBRSx = 1
-    UCA0BR0 = 6;             // Assume DCO 1MHz --> 9600
-    UCA0BR1 = 0;               // Assume DCO 1MHz --> 9600
-    UCA0MCTL = UCBRS_0 | UCBRF_8 | UCOS16;         // Modulation UCBRSx = 1
-    UCA0CTL1 &= ~UCSWRST;      // Initialize USCI state machine
+    P1SEL  |= (RXD | TXD);                  // Configure RXD and TXD pins
+    P1SEL2 |= (RXD | TXD);                  // Configure RXD and TXD pins
+    UCA0CTL1 = UCSWRST;                     // Reset
+    UCA0CTL0 = 0;                           // Nothing to set
+    UCA0CTL1 |= UCSSEL_2;                   // SMCLK
+    UCA0BR0 = 6;                            // Assume DCO 1MHz --> 9600
+    UCA0BR1 = 0;                            // Assume DCO 1MHz --> 9600
+    UCA0MCTL = UCBRS_0 | UCBRF_8 | UCOS16;  // Modulation
+    UCA0CTL1 &= ~UCSWRST;                   // Initialize USCI state machine
 }
 
 void UART_putc(unsigned char c)
 {
-    while (!(IFG2 & UCA0TXIFG)); // USCI_A0 TX buffer ready?
-    UCA0TXBUF = c;             // TX
+    while (!(IFG2 & UCA0TXIFG));            // USCI_A0 TX buffer ready?
+    UCA0TXBUF = c;                          // TX
 }
 
 void UART_puts(const char *str)
