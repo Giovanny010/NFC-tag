@@ -21,9 +21,9 @@
  */
 
 #include <msp430.h>
-#include <SPI.h>
-#include <Mfrc522.h>
-#include <UART.h>
+#include "SPI.h"
+#include "Mfrc522.h"
+#include "UART.h"
 
 #define RC522_CS_PIN  BIT4 // P1.4
 #define RC522_RST_PIN BIT3 // P1.3
